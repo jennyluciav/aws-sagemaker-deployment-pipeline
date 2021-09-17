@@ -91,7 +91,7 @@ Parameters:
   GitHubToken:
     Default: ""
     NoEcho: true
-    Description: Optional Github OAuthToken with access to your Repo.  Leave blank to pull the public repository into local CodeCommit.
+    Description: Optional Github OAuthToken with access to your Repo. Leave blank to pull the public repository into local CodeCommit.
     Type: String
   EmailAddress:
     Default: ""
