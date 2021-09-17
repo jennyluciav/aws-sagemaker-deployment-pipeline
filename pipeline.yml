@@ -77,15 +77,15 @@ Parameters:
     Description: S3 dataset bucket.
     Type: String
   GitHubUser:
-    Default: aws-samples
+    Default: jennyluciav
     Description: Your GitHub username
     Type: String
   GitHubRepo:
-    Default: amazon-sagemaker-safe-deployment-pipeline
+    Default: aws-sagemaker-deployment-pipeline
     Type: String
     Description: Name of the GitHub repository.
   GitHubBranch:
-    Default: master
+    Default: main
     Type: String
     Description: Name of the GitHub branch where the code is located.
   GitHubToken:
@@ -376,7 +376,7 @@ Resources:
                 PollForSourceChanges: false # Triggered by S3EventRule
                 S3Bucket: !Ref ArtifactBucket
                 S3ObjectKey: !Sub ${ModelName}/data-source.zip
-                PollForSourceChanges: false
+                #PollForSourceChanges: false
               RunOrder: 1
         - Name: Build
           Actions:
